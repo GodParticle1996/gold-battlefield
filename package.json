@@ -1,0 +1,25 @@
+{
+  "name": "gold-battlefield",
+  "private": true,
+  "version": "0.3.0",
+  "description": "GOLD BATTLEFIELD — 3D battlefield visualization of gold market data. Educational market visualization only. Not financial advice, not a price forecast, and not a trading signal.",
+  "workspaces": [
+    "apps/*",
+    "packages/*",
+    "tests/*"
+  ],
+  "scripts": {
+    "dev:web": "npm run dev --workspace @gb/web",
+    "dev:gateway": "npm run dev --workspace @gb/gateway",
+    "build": "npm run build --workspaces --if-present",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "test": "npm run test --workspace @gb/tests-unit",
+    "test:watch": "npm run test:watch --workspace @gb/tests-unit",
+    "test:e2e": "npm run test --workspace @gb/tests-e2e",
+    "test:e2e:install": "npm run install:chromium --workspace @gb/tests-e2e",
+    "check:secrets": "tsx scripts/check-secrets.ts"
+  },
+  "engines": {
+    "node": ">=18.17"
+  }
+}

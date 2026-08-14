@@ -1,0 +1,26 @@
+# GOLD BATTLEFIELD — local deployment (spec default: Local + Docker).
+#   docker compose up --build
+#   web:      http://localhost:8080   (nginx serves the SPA + proxies /ws)
+#   gateway:  http://localhost:8081/health
+services:
+  gateway:
+    build:
+      context: .
+      dockerfile: apps/gateway/Dockerfile
+    environment:
+      - PORT=8081
+      - ALLOWED_ORIGINS=*
+      - LOG_LEVEL=info
+    ports:
+      - "8081:8081"
+    restart: unless-stopped
+
+  web:
+    build:
+      context: .
+      dockerfile: apps/web/Dockerfile
+    ports:
+      - "8080:80"
+    depends_on:
+      - gateway
+    restart: unless-stopped

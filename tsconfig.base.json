@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["ES2022", "DOM", "DOM.Iterable", "WebWorker"],
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitOverride": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "baseUrl": ".",
+    "paths": {
+      "@gb/market-types": ["packages/market-types/src/index.ts"],
+      "@gb/shared-config": ["packages/shared-config/src/index.ts"],
+      "@gb/order-book": ["packages/order-book/src/index.ts"],
+      "@gb/analytics": ["packages/analytics/src/index.ts"],
+      "@gb/visual-mapping": ["packages/visual-mapping/src/index.ts"],
+      "@gb/provider-adapters": ["packages/provider-adapters/src/index.ts"]
+    },
+    "types": ["node"]
+  }
+}

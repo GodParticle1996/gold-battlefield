@@ -1,0 +1,65 @@
+{
+  "meta": {
+    "provider": "replay",
+    "symbol": "XAUT/USD",
+    "instrumentType": "tokenized-gold-spot",
+    "description": "Deterministic 30-second recorded session around $4,365/oz. Includes inserts, updates, deletions, an aggressive-buy large trade (~520 oz) and an exceptional sell (~2,500 oz)."
+  },
+  "events": [
+    {
+      "type": "snapshot",
+      "provider": "replay",
+      "symbol": "XAUT/USD",
+      "instrumentType": "tokenized-gold-spot",
+      "timestamp": 1752000000000,
+      "sequence": 2000,
+      "bids": [
+        { "price": 4365.0, "quantity": 18.5 },
+        { "price": 4364.95, "quantity": 12.3 },
+        { "price": 4364.9, "quantity": 25.0 },
+        { "price": 4364.85, "quantity": 7.2 },
+        { "price": 4364.8, "quantity": 30.1 },
+        { "price": 4364.75, "quantity": 9.4 },
+        { "price": 4364.7, "quantity": 15.8 },
+        { "price": 4364.65, "quantity": 5.1 },
+        { "price": 4364.6, "quantity": 21.7 },
+        { "price": 4364.55, "quantity": 8.9 }
+      ],
+      "asks": [
+        { "price": 4365.05, "quantity": 16.2 },
+        { "price": 4365.1, "quantity": 11.4 },
+        { "price": 4365.15, "quantity": 27.8 },
+        { "price": 4365.2, "quantity": 6.3 },
+        { "price": 4365.25, "quantity": 19.9 },
+        { "price": 4365.3, "quantity": 8.6 },
+        { "price": 4365.35, "quantity": 24.4 },
+        { "price": 4365.4, "quantity": 4.7 },
+        { "price": 4365.45, "quantity": 13.5 },
+        { "price": 4365.5, "quantity": 10.2 }
+      ]
+    },
+    { "type": "delta", "provider": "replay", "symbol": "XAUT/USD", "instrumentType": "tokenized-gold-spot", "timestamp": 1752000001000, "firstSequence": 2001, "finalSequence": 2001, "bidUpdates": [{ "price": 4364.9, "quantity": 31.2 }], "askUpdates": [{ "price": 4365.15, "quantity": 20.1 }] },
+    { "type": "trade", "provider": "replay", "symbol": "XAUT/USD", "instrumentType": "tokenized-gold-spot", "timestamp": 1752000002000, "tradeId": "t-1", "price": 4365.05, "baseQuantity": 2.5, "quoteNotional": 10912.63, "aggressorSide": "buy", "isEstimated": false },
+    { "type": "delta", "provider": "replay", "symbol": "XAUT/USD", "instrumentType": "tokenized-gold-spot", "timestamp": 1752000002000, "firstSequence": 2002, "finalSequence": 2002, "bidUpdates": [{ "price": 4365.02, "quantity": 4.4 }], "askUpdates": [{ "price": 4365.03, "quantity": 3.9 }] },
+    { "type": "trade", "provider": "replay", "symbol": "XAUT/USD", "instrumentType": "tokenized-gold-spot", "timestamp": 1752000004000, "tradeId": "t-2", "price": 4364.98, "baseQuantity": 1.8, "quoteNotional": 7856.96, "aggressorSide": "sell", "isEstimated": false },
+    { "type": "delta", "provider": "replay", "symbol": "XAUT/USD", "instrumentType": "tokenized-gold-spot", "timestamp": 1752000003000, "firstSequence": 2003, "finalSequence": 2003, "bidUpdates": [{ "price": 4364.8, "quantity": 0 }], "askUpdates": [{ "price": 4365.25, "quantity": 0 }] },
+    { "type": "delta", "provider": "replay", "symbol": "XAUT/USD", "instrumentType": "tokenized-gold-spot", "timestamp": 1752000004000, "firstSequence": 2004, "finalSequence": 2004, "bidUpdates": [{ "price": 4364.85, "quantity": 10.5 }], "askUpdates": [{ "price": 4365.2, "quantity": 9.1 }] },
+    { "type": "delta", "provider": "replay", "symbol": "XAUT/USD", "instrumentType": "tokenized-gold-spot", "timestamp": 1752000005000, "firstSequence": 2005, "finalSequence": 2005, "bidUpdates": [{ "price": 4365.0, "quantity": 14.9 }], "askUpdates": [{ "price": 4365.05, "quantity": 19.7 }] },
+    { "type": "reference-price", "provider": "replay", "symbol": "XAUT/USD", "instrumentType": "tokenized-gold-spot", "timestamp": 1752000006000, "bid": 4364.98, "ask": 4365.03, "midpoint": 4365.005, "isDelayed": false, "isStale": false },
+    { "type": "delta", "provider": "replay", "symbol": "XAUT/USD", "instrumentType": "tokenized-gold-spot", "timestamp": 1752000006000, "firstSequence": 2006, "finalSequence": 2006, "bidUpdates": [{ "price": 4364.6, "quantity": 26.3 }], "askUpdates": [{ "price": 4365.5, "quantity": 12.8 }] },
+    { "type": "delta", "provider": "replay", "symbol": "XAUT/USD", "instrumentType": "tokenized-gold-spot", "timestamp": 1752000007000, "firstSequence": 2007, "finalSequence": 2007, "bidUpdates": [{ "price": 4364.95, "quantity": 9.8 }], "askUpdates": [{ "price": 4365.1, "quantity": 15.6 }] },
+    { "type": "trade", "provider": "replay", "symbol": "XAUT/USD", "instrumentType": "tokenized-gold-spot", "timestamp": 1752000008000, "tradeId": "t-3", "price": 4365.03, "baseQuantity": 5.6, "quoteNotional": 24444.17, "aggressorSide": "buy", "isEstimated": false },
+    { "type": "delta", "provider": "replay", "symbol": "XAUT/USD", "instrumentType": "tokenized-gold-spot", "timestamp": 1752000008000, "firstSequence": 2008, "finalSequence": 2008, "bidUpdates": [{ "price": 4365.02, "quantity": 0 }], "askUpdates": [{ "price": 4365.03, "quantity": 0 }] },
+    { "type": "delta", "provider": "replay", "symbol": "XAUT/USD", "instrumentType": "tokenized-gold-spot", "timestamp": 1752000009000, "firstSequence": 2009, "finalSequence": 2009, "bidUpdates": [{ "price": 4364.75, "quantity": 13.7 }], "askUpdates": [{ "price": 4365.3, "quantity": 6.2 }] },
+    { "type": "delta", "provider": "replay", "symbol": "XAUT/USD", "instrumentType": "tokenized-gold-spot", "timestamp": 1752000010000, "firstSequence": 2010, "finalSequence": 2010, "bidUpdates": [{ "price": 4364.65, "quantity": 7.9 }], "askUpdates": [{ "price": 4365.35, "quantity": 18.3 }] },
+    { "type": "delta", "provider": "replay", "symbol": "XAUT/USD", "instrumentType": "tokenized-gold-spot", "timestamp": 1752000011000, "firstSequence": 2011, "finalSequence": 2011, "bidUpdates": [{ "price": 4364.55, "quantity": 11.6 }], "askUpdates": [{ "price": 4365.4, "quantity": 8.4 }] },
+    { "type": "trade", "provider": "replay", "symbol": "XAUT/USD", "instrumentType": "tokenized-gold-spot", "timestamp": 1752000012000, "tradeId": "t-4", "price": 4365.0, "baseQuantity": 3.2, "quoteNotional": 13968.0, "aggressorSide": "sell", "isEstimated": false },
+    { "type": "delta", "provider": "replay", "symbol": "XAUT/USD", "instrumentType": "tokenized-gold-spot", "timestamp": 1752000012000, "firstSequence": 2012, "finalSequence": 2012, "bidUpdates": [{ "price": 4365.01, "quantity": 6.6 }], "askUpdates": [{ "price": 4365.06, "quantity": 5.2 }] },
+    { "type": "delta", "provider": "replay", "symbol": "XAUT/USD", "instrumentType": "tokenized-gold-spot", "timestamp": 1752000013000, "firstSequence": 2013, "finalSequence": 2013, "bidUpdates": [{ "price": 4364.7, "quantity": 20.4 }], "askUpdates": [{ "price": 4365.45, "quantity": 16.9 }] },
+    { "type": "trade", "provider": "replay", "symbol": "XAUT/USD", "instrumentType": "tokenized-gold-spot", "timestamp": 1752000015000, "tradeId": "t-5", "price": 4365.2, "baseQuantity": 520.0, "quoteNotional": 2269904.0, "aggressorSide": "buy", "isEstimated": false },
+    { "type": "reference-price", "provider": "replay", "symbol": "XAUT/USD", "instrumentType": "tokenized-gold-spot", "timestamp": 1752000018000, "bid": 4364.99, "ask": 4365.04, "midpoint": 4365.015, "isDelayed": false, "isStale": false },
+    { "type": "trade", "provider": "replay", "symbol": "XAUT/USD", "instrumentType": "tokenized-gold-spot", "timestamp": 1752000020000, "tradeId": "t-6", "price": 4364.95, "baseQuantity": 4.1, "quoteNotional": 17896.3, "aggressorSide": "sell", "isEstimated": false },
+    { "type": "trade", "provider": "replay", "symbol": "XAUT/USD", "instrumentType": "tokenized-gold-spot", "timestamp": 1752000024000, "tradeId": "t-7", "price": 4364.6, "baseQuantity": 2500.0, "quoteNotional": 10911500.0, "aggressorSide": "sell", "isEstimated": false },
+    { "type": "trade", "provider": "replay", "symbol": "XAUT/USD", "instrumentType": "tokenized-gold-spot", "timestamp": 1752000028000, "tradeId": "t-8", "price": 4365.1, "baseQuantity": 0.9, "quoteNotional": 3928.59, "aggressorSide": "buy", "isEstimated": false }
+  ]
+}
