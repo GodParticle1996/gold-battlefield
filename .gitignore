@@ -10,3 +10,9 @@ coverage/
 .vite/
 playwright-report/
 test-results/
+.venv/
+venv/
+__pycache__/
+*.pyc
+build/
+.next/
